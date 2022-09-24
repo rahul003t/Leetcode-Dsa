@@ -30,7 +30,7 @@ class Solution {
                 list.add(new ArrayList<>(curr));
                 curr.remove(curr.size()-1);
             }
-            return;
+           // return;
         }
         curr.add(root.val);
         sum(root.left,sum-root.val,curr);
