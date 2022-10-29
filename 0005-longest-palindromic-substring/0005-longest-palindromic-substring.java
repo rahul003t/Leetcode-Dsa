@@ -5,6 +5,7 @@ class Solution {
         {
             return s;
         }
+        
         int len = s.length();
         boolean[][] dp = new boolean[len][len];
         
