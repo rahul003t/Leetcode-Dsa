@@ -29,25 +29,23 @@ class GFG {
 //User function Template for Java
 
 class Solution {
-    public int removeStudents(int[] H, int N)
-    {
-        // 
+    public int removeStudents(int[] H, int N) {
+        
         int LTS = lengthofLTS(H);
         return N-LTS;
-        
     }
-    
     public static int lengthofLTS(int[] H)
     {
         int[] a = new int[H.length+1];
         Arrays.fill(a,Integer.MAX_VALUE);
-        a[0]=Integer.MIN_VALUE;
+        a[0] = Integer.MIN_VALUE;
         
         for(int h: H)
         {
-          int idx = BS(a,h);
-          a[idx+1] = h;
+            int idx = search(a,h);
+            a[idx+1] = h;
         }
+        
         
         for(int i=a.length-1;i>=0;i--)
         {
@@ -55,28 +53,27 @@ class Solution {
             {
                 return i;
             }
+            
         }
         return 0;
     }
-        
-        
-         // Binary search for the sorted part
-        public static int BS(int[] a,int m)
-        {
-            int start=0,end=a.length-1,max=0;
-            while(start <= end)
+    
+    public static int search(int[] a, int m)
+    {
+        int lo=0,hi=a.length-1,ans=0;
+        while(lo <= hi)
+         {  
+            int mid= lo +(hi-lo)/2;
+            if(a[mid] < m)
             {
-                int mid = start +(end - start)/2;
-                if(a[mid] < m)
-                {
-                    start = mid+1;
-                    max = Math.max(max,mid);
-                }
-                else
-                {
-                    end = mid-1;
-                }
+                lo = mid+1;
+                ans = Math.max(ans,mid);
             }
-            return max;
+            else
+            {
+                hi = mid-1;
+            }
         }
+        return ans;
+    }
 };
