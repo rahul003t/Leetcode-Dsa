@@ -4,7 +4,7 @@
 Your task is to find the number of lucky permutations of the&nbsp;given array.<strong>&nbsp;</strong></span></p>
 
 <blockquote>
-<p><span style="font-size:18px">An array permutation is said to be lucky if for every node <strong>V<sub>i&nbsp; </sub>[1 &lt; i &lt; N-1]</strong> in the array there exists an edge between the nodes&nbsp;<strong>V</strong><sub><strong>i</strong>&nbsp;</sub>and <strong>V<sub>i+1&nbsp;</sub></strong>in the given graph.</span></p>
+<p><span style="font-size:18px">An array permutation is said to be lucky if for every node <strong>V<sub>i&nbsp; </sub>[1 &lt;= i &lt;= N-1]</strong> in the array there exists an edge between the nodes&nbsp;<strong>V</strong><sub><strong>i</strong>&nbsp;</sub>and <strong>V<sub>i+1&nbsp;</sub></strong>in the given graph.</span></p>
 </blockquote>
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
