@@ -32,6 +32,7 @@ class GFG {
 
 // User Function Template for JAVA
 
+
 class Solution{
     public static long[] nextLargerElement(long[] arr, int n) { 
         // Your code here
@@ -41,7 +42,7 @@ class Solution{
         //here I using stak operation so i cretae a stack
         Stack<Long> st=new Stack<>();
         
-        //traversing from the second last element of the array
+        //traversing from the last element of the array
         for(int i=n-1;i>=0;i--)
         {
             while(!st.isEmpty() && st.peek() < arr[i])
