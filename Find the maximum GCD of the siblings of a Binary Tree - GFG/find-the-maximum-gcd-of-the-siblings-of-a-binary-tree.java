@@ -128,11 +128,11 @@ class Solution {
     
     int dfs(Node root)
     {
-        if(root == null )
+        if(root == null)
         {
             return 0;
-            
         }
+        
         int left=dfs(root.left);
         int right=dfs(root.right);
         
@@ -142,22 +142,24 @@ class Solution {
             if(gcd > max_gcd)
             {
                 max_gcd=gcd;
-                ans =root.data;
+                ans= root.data;
             }
             else if(gcd == max_gcd && root.data > ans)
             {
                 ans = root.data;
             }
+            
         }
         return root.data;
     }
     
     int gcd(int a,int b)
     {
-        if(a==0)
+        if(a == 0)
         {
             return b;
         }
+        
         return gcd(b%a,a);
     }
 }
