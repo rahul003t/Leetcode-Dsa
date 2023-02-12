@@ -49,16 +49,6 @@ class Main
 
 
 //User function Template for Java
-/*
-class Node{
-    Node next;
-    int val;
-    public Node(int data){
-        val=data;
-        next=null;
-    }
-}
-*/
 
 class Solution
 {
@@ -99,3 +89,6 @@ class Solution
         return true;
     }
 }
+
+ 
+
