@@ -26,7 +26,7 @@ class GFG{
 
 
 //User function Template for Java
- class Solution{
+class Solution{
     static int inSequence(int A, int B, int C){
         // code here
         if(C==0) return (A==B)?1:0;
