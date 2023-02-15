@@ -32,6 +32,7 @@ class GFG{
 
 //User function Template for Java
 
+
 class Solution{
     int dirs[][] = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 	int water_flow(int [][] mat, int m, int n) {
