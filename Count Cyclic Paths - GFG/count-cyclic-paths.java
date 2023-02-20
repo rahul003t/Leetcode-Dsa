@@ -7,8 +7,6 @@ import java.util.*;
 
 // } Driver Code Ends
 //User function Template for Java
-
-
 class Solution{
 	public static int countPaths(int N){
 	int count=0;
@@ -29,7 +27,7 @@ class Solution{
     return count;
         
 	}
-}		//code here
+}
 
 //{ Driver Code Starts.
 
