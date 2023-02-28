@@ -27,7 +27,6 @@ class GFG {
 }
 // } Driver Code Ends
 
-
 class Solution {
     public long[] optimalArray(int n,int a[])
     {
