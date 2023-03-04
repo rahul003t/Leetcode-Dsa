@@ -57,6 +57,7 @@ class GFG {
 
 // } Driver Code Ends
 
+
 class Solution {
 
     public static long bestNode(int N, int[] A, int[] P) {
