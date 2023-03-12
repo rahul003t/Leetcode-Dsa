@@ -61,18 +61,18 @@ class GfG {
 
 class Solution {
     public int[] findMaxRow(int mat[][], int N) {
-        // code here;j
+        // code here
         
-    
         int[] row = new int[2];
-        int overallMax =0;
+        
         int currMax=0;
+        int overallMax =0;
         
         for(int i=0;i<N;i++)
         {
             for(int j=0;j<mat[0].length;j++)
             {
-                if(mat[i][j] ==1)
+                if(mat[i][j] == 1)
                 {
                     currMax++;
                 }
@@ -84,7 +84,8 @@ class Solution {
                 row[0]=i;
                 row[1]=overallMax;
             }
-            currMax=0;
+            
+            currMax =0;
         }
         
         return row;
