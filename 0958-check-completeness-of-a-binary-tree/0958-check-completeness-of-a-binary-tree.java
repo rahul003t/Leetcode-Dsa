@@ -21,11 +21,11 @@ class Solution {
 //         while(q.peek()!=null)
 //         {
 //             TreeNode curr = q.poll();
-//             q.offer(root.left);
-//             q.offer(root.right);
+//             q.offer(curr.left);
+//             q.offer(curr.right);
 //         }
         
-//         if(!q.isEmpty() && q.peek() == null)
+//         while(!q.isEmpty() && q.peek() == null)
 //         {
 //             q.poll();
 //         }
