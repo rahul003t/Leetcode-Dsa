@@ -18,18 +18,31 @@ class Solution {
         
 //         return result;
         
-        int[] ans = new int[2];
+//         int[] ans = new int[2];
         
-        for(int i=0;i<nums.length;i++)
+//         for(int i=0;i<nums.length;i++)
+//         {
+//             for(int j=i+1;j<nums.length;j++)
+//             {
+//                 if(nums[i]+nums[j]==target)
+//                 {
+//                     return new int[]{i,j};
+//                 }
+//             }
+//         }
+//         return null;
+        
+        int n = nums.length;
+        int[] ans=new int[2];
+        for(int i=0;i<n;i++)
         {
-            for(int j=i+1;j<nums.length;j++)
+            for(int j=i+1;j<n;j++)
             {
                 if(nums[i]+nums[j]==target)
-                {
                     return new int[]{i,j};
-                }
             }
         }
+        
         return null;
     }
 }
