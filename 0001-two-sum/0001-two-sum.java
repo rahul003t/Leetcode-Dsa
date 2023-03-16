@@ -32,14 +32,16 @@ class Solution {
 //         }
 //         return null;
         
-        int n = nums.length;
-        int[] ans=new int[2];
+       int n= nums.length;
+        int[] ans = new int[2];
         for(int i=0;i<n;i++)
         {
             for(int j=i+1;j<n;j++)
             {
-                if(nums[i]+nums[j]==target)
+                if(nums[i]+nums[j] == target)
+                {
                     return new int[]{i,j};
+                }
             }
         }
         
