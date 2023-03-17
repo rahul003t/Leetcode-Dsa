@@ -18,26 +18,41 @@ public class Solution {
             return false;
         }
         
-        ListNode slow = head;
-        ListNode fast = head.next;
+//         ListNode slow = head;
+//         ListNode fast = head.next;
         
-        while(slow != null && fast != null && slow!=fast)
-        {
+//         while(slow != null && fast != null && slow!=fast)
+//         {
            
-            slow = slow.next;
-            fast = fast.next;
+//             slow = slow.next;
+//             fast = fast.next;
             
-            if(fast != null)
+//             if(fast.val == slow.val)
+//             {
+//                 return true;
+//             }
+//         }
+//         if( slow == null || fast == null)
+//         {
+//             return false;
+//         }
+        
+        
+//         return true;
+        
+        ListNode slow=head;
+        ListNode fast = head;
+        
+        while(fast!= null && fast.next !=null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+            
+            if(slow == fast)
             {
-                fast =fast.next;
+                return true;
             }
         }
-        if( slow == null || fast == null)
-        {
-            return false;
-        }
-        
-        
-        return true;
+        return false;
     }
 }
