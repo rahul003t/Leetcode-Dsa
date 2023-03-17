@@ -11,17 +11,20 @@
  */
 public class Solution {
     
-     Set<ListNode> visited = new HashSet<>();
+    Set<ListNode> visited = new HashSet<>();
     public ListNode detectCycle(ListNode head) {
-       
         if(head == null)
-        return null;
-    
-    if(visited.contains(head))
-        return head;
-    visited.add(head);
-    
-    return detectCycle(head.next);
+        {
+            return null;
+        }
         
+        if(visited.contains(head))
+        {
+            return head;
+        }
+        
+        visited.add(head);
+        
+        return detectCycle(head.next);
     }
 }
