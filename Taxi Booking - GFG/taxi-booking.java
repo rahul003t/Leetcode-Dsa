@@ -63,14 +63,14 @@ class GFG {
 
 
 class Solution {
-   public static int minimumTime(int n, int cur, int[] pos, int[] time) {
+    public static int minimumTime(int n, int cur, int[] pos, int[] time) {
     ArrayList<Integer> list = new ArrayList<>();
     for(int i = 0; i < n; i++)
     {
         int sum = (Math.abs(pos[i] - cur)*time[i]);
         list.add(sum);
     }
-    return Collections.min(list);
+     return Collections.min(list);
     }
 }
         
