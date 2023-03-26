@@ -39,7 +39,7 @@ class GFG {
 //User function Template for Java
 
 class Solution {
-  public int unvisitedLeaves(int N, int leaves, int frogs[]) {
+    public int unvisitedLeaves(int N, int leaves, int frogs[]) {
         // Code here
         int unVisited = 0;
         boolean[] visit = new boolean[leaves+1];
