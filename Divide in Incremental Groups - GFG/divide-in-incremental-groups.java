@@ -26,8 +26,7 @@ class GFG {
 
 // User function Template for Java
 
-
-   class Solution {
+class Solution {
  
     static int find(int n,int k,int pos,int min,int sum,int[][][] dp){
         
