@@ -55,6 +55,8 @@ class GFG {
 // } Driver Code Ends
 
 
+
+        
 class Solution {
     public static int minimumInteger(int N, int[] A) {
          
@@ -79,5 +81,4 @@ class Solution {
          
     }
 }
-        
         
