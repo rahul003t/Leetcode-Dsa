@@ -8,18 +8,19 @@ class Solution {
         
         while(start <= end)
         {
-            int mid = start +(end -start)/2;
+            int mid = start +(end - start)/2;
+            
             if(nums[mid] == target)
             {
                 return mid;
             }
-            if(nums[mid] > target)
+            else if(nums[mid] > target)
             {
-                end = mid-1;
+                end = mid -1;
             }
             else
             {
-                start =mid+1;
+                start = mid+1;
             }
         }
         
