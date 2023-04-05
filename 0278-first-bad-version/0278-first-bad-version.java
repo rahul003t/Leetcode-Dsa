@@ -10,9 +10,10 @@ public class Solution extends VersionControl {
         while(start < end)
         {
             int mid = start +(end - start)/2;
+            
             if(isBadVersion(mid))
             {
-                end= mid;
+                end = mid;
             }
             else
             {
@@ -21,5 +22,6 @@ public class Solution extends VersionControl {
         }
         
         return start;
-    }
+        
+    }   
 }
