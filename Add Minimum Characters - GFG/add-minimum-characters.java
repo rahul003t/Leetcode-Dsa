@@ -10,7 +10,7 @@ import java.util.*;
 
 class Solution
 {
-public static int addMinChar(String str){
+	public static int addMinChar(String str){
 		//code here
 
 		    //check for the max palindrome string starting from the 0th index
