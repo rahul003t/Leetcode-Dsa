@@ -41,7 +41,7 @@ class GFG {
 
 
 class Solution {
-    private static final int MAX_SIZE = 100005; // maximum size of arrays
+   private static final int MAX_SIZE = 100005; // maximum size of arrays
 private static final int MOD = 1000000007; // a large prime number used for modulo operations
 private static long[] factorial = new long[MAX_SIZE]; // array to store factorials
 private static long[] inverseFactorial = new long[MAX_SIZE]; // array to store inverse factorials
