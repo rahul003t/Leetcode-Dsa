@@ -56,7 +56,7 @@ class GFG {
 
 
 class Solution {
-   public static int dominantPairs(int n, int[] arr) {
+    public static int dominantPairs(int n, int[] arr) {
        
         int i=0,j=n/2;
         Arrays.sort(arr,0,j);
