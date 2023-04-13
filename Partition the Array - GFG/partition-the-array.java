@@ -23,6 +23,7 @@ class GFG{
 // } Driver Code Ends
 
 
+//User function Template for Java
 class Solution 
 {
 	ArrayList<long []> help(int [] a){
