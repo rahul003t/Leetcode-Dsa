@@ -57,7 +57,6 @@ class GFG {
 
 // } Driver Code Ends
 
-
 class Solution {
     public static long solve(int N, int[] A, int[] B) {
         // code here
@@ -101,4 +100,4 @@ class Solution {
        }  
        return total/2;
     }
-}       
+}
