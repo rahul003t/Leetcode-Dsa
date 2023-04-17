@@ -41,7 +41,6 @@ class GfG {
 }
 // } Driver Code Ends
 
-
 class Solution
 {
     //Function to find the maximum profit and the number of jobs done.
