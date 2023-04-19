@@ -27,7 +27,7 @@ class GFG{
 //User function Template for Java
 class Solution 
 { 
-   boolean wifiRange(int N, String S, int X) 
+  boolean wifiRange(int N, String S, int X) 
     {
         // code here
         boolean wifiAvailable = false;
