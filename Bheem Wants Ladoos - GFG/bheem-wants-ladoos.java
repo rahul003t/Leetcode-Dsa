@@ -114,7 +114,6 @@ class Node{
 }
 
 */
-
 class Solution{
     static Node search(Node root,int home)
     {
