@@ -63,16 +63,15 @@ class Solution {
         
         for(int i=1;i<n;i++)
         {
-            ans = gcd(ans,arr[i]);
+          ans = gcd(ans,arr[i]);  
         }
         
         return ans;
     }
     
-    
     static int gcd(int a,int b)
     {
-        while(a!=b)
+        while(a != b)
         {
             if(a > b)
             {
@@ -80,7 +79,7 @@ class Solution {
             }
             else
             {
-                b =b-a;
+                b = b-a;
             }
         }
         
