@@ -33,43 +33,58 @@ class GFG{
 class Solution{
 	int [] nearestSmallestTower(int [] arr){
 		//Write your code here
-		int n = arr.length;
-		int[] ans = new int[n];
-		Arrays.fill(ans, -1);
-		Stack<Integer> st = new Stack<>();
-		
-		for(int i = 0; i < n; i++){
-		    while(!st.isEmpty() && arr[st.peek()] > arr[i]){
-		        ans[st.pop()] = i; 
-		    }
-		    st.push(i);
-		}
-		st.clear();
-	    
-	    
-	    for(int i =  n - 1; i >= 0; i--){
-	        
-	        while(!st.isEmpty() && arr[st.peek()] > arr[i]){
-	           int index = ans[st.peek()];
-	           if(index == -1) {
-	               ans[st.pop()] = i; 
-	           }
-	            else{
-	                int diff1 = Math.abs(st.peek()-index);
-	                int diff2 = Math.abs(st.peek()-i);
-	                if(diff1 > diff2)  ans[st.pop()] = i; 
-	                else if(diff2 > diff1)  ans[st.pop()] = index;
-	                else if (diff1 == diff2){
-	                    if(arr[index] < arr[i])
-	                        ans[st.pop()] = index;
-	                   else
-	                        ans[st.pop()] = i; 
-	                }
-	                else break;
-	            }
-	        }
-	        st.push(i);
-	    }
-		return ans;
+	    int n = arr.length;
+        int[] left = new int[n];    // Array to store the index of the nearest smaller tower on the left
+        int[] right = new int[n];   // Array to store the index of the nearest smaller tower on the right
+        Arrays.fill(left, -1);      // Initialize all elements of the 'left' array to -1
+        Arrays.fill(right, -1);     // Initialize all elements of the 'right' array to -1
+
+        Stack<Integer> stack = new Stack<>();  // Create a stack to store the indices of towers
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && arr[stack.peek()] >= arr[i]) {
+                // Pop elements from the stack until the top element is smaller than the current tower
+                stack.pop();    
+            }
+            if (!stack.isEmpty()) {
+                // The index of the nearest smaller tower on the left is the top element of the stack
+                left[i] = stack.peek(); 
+            }
+            stack.push(i);  // Push the index of the current tower onto the stack
+        }
+
+        stack.clear();  // Clear the stack for re-use
+        for (int i = n - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && arr[stack.peek()] >= arr[i]) {
+                // Pop elements from the stack until the top element is smaller than the current tower
+                stack.pop();    
+            }
+            if (!stack.isEmpty()) {
+                // The index of the nearest smaller tower on the right is the top element of the stack
+                right[i] = stack.peek();    
+            }
+            stack.push(i);  // Push the index of the current tower onto the stack
+        }
+
+        int[] result = new int[n];  // Array to store the final result
+        for (int i = 0; i < n; i++) {
+             // Distance between the current tower and the nearest smaller tower on the left
+            int leftDist = left[i] == -1 ? Integer.MAX_VALUE : i - left[i]; 
+            // Distance between the current tower and the nearest smaller tower on the right
+            int rightDist = right[i] == -1 ? Integer.MAX_VALUE : right[i] - i;    
+            /* If the nearest smaller tower on the left is closer or has equal distance but is 
+            smaller or equal in height, set it as the result*/
+            if (leftDist < rightDist || (leftDist == rightDist && left[i] != -1 && arr[left[i]] <= arr[right[i]])) {
+                result[i] = left[i];    
+            } else 
+            /* If the nearest smaller tower on the right is closer or has equal distance but is 
+            smaller in height, set it as the result*/
+            
+            if (leftDist > rightDist || (leftDist == rightDist && right[i] != -1 && arr[right[i]] < arr[left[i]])) {
+                result[i] = right[i];   
+            } else {
+                result[i] = -1; // If there is no smaller tower on both sides, set the result as -1
+            }
+        }
+        return result;  // Return the final result array
 	}
 }
