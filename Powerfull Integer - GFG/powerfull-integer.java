@@ -28,7 +28,6 @@ class GFG
 // } Driver Code Ends
 
 
-//User function Template for Java
 class Solution{
     public static int powerfullInteger(int n,int interval[][],int k)
     {
