@@ -70,6 +70,7 @@ class N_ary_Tree{
 
 //User function Template for Java
 
+
 class Solution{
     Map<String,Integer> map = new HashMap<>();
     public int duplicateSubtreeNaryTree(Node root){
