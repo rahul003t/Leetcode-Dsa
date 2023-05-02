@@ -29,6 +29,7 @@ class GFG{
 
 
 //User function Template for Java
+
 class Solution{
     int maxSweetness(int [] sweetness, int N, int K) {
         int max=0,min= Integer.MAX_VALUE;
