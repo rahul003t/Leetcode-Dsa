@@ -52,7 +52,7 @@ class GFG {
 
 
 class Solution {
-    public static boolean makePalindrome(int n, String[] arr) {
+   public static boolean makePalindrome(int n, String[] arr) {
         // code here
        HashMap<String, Integer> map = new HashMap<>();
        boolean selfPalindrome = false;
