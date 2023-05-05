@@ -101,7 +101,6 @@ class GfG {
 
 
 //User function Template for Java
-
 class Solution
 {
     public static int goodtree = 0;
