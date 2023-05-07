@@ -25,7 +25,7 @@ class GFG {
 
 
 class Solution {
-   public static String stringMirror(String str) {
+    public static String stringMirror(String str) {
         // code here
      // Create a StringBuilder to store the prefix of the mirrored string
     StringBuilder prefix = new StringBuilder();
