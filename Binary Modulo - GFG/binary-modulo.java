@@ -23,6 +23,7 @@ class GFG{
 
 
 //User function Template for Java
+
 class Solution{
     int modulo(String s, int m) {
         int sum=0;
