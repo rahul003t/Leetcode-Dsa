@@ -26,6 +26,7 @@ class GFG {
 
 
 // User function Template for Java
+
 class Solution {
     final int MOD = 1000000007;
     long[][] multiply(long[][] a, long[][] b) {
