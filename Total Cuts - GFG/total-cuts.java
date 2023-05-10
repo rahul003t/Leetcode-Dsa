@@ -58,6 +58,7 @@ class GFG {
 
 // } Driver Code Ends
 
+
 class Solution {
     public static int totalCuts(int N, int K, int[] A) {
         // code here
