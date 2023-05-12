@@ -54,6 +54,7 @@ class GFG {
 
 // } Driver Code Ends
 
+
 class Solution {
     public static int arrayOperations(int n, int[] arr) {
         // code here
