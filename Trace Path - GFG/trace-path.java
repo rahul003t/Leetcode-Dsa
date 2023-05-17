@@ -26,7 +26,7 @@ class GFG{
 // User function Template for 
 
 class Solution{
-    static int isPossible(int n, int m, String s){
+   static int isPossible(int n, int m, String s){
        int a=0, b=0, c=0, d=0;
        for(int i=0;i<s.length();i++){
            if(s.charAt(i)=='L'){
