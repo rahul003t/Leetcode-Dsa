@@ -35,7 +35,7 @@ class GFG
 
 class Solution
 {
-   public int closedIslands(int[][] grid, int n, int m)
+    public int closedIslands(int[][] grid, int n, int m)
     {
         // Code here
      // traversing boundary and converting 0s to 1s
@@ -79,4 +79,5 @@ class Solution
 
         return false;
     }    
+        
 }
