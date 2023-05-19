@@ -35,6 +35,7 @@ class GFG{
 }
 // } Driver Code Ends
 
+
 class Solution {
     public static ArrayList<Integer> kthSmallestNum(int n, int[][] range, int q, int[] queries) {
         // code here
@@ -124,3 +125,5 @@ class Solution {
 	    return a1;
 	}
 }
+
+        
