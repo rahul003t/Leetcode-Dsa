@@ -57,6 +57,7 @@ class GFG {
 
 // } Driver Code Ends
 
+
 class Solution {
     public static int findMoves(int n, int[] chairs, int[] passengers) {
         // code here
@@ -68,4 +69,4 @@ class Solution {
         }
         return ans;
     }
-}     
+}    
