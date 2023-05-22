@@ -54,6 +54,7 @@ class GFG {
 
 // } Driver Code Ends
 
+
 class Solution {
     public static int solve(int N, int[] p) {
         int[] arr = new int[N];
@@ -78,4 +79,3 @@ class Solution {
         return N - 1 - count;
     }
 }
-        
