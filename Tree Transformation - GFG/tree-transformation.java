@@ -77,4 +77,5 @@ class Solution {
         
         return N - 1 - count;
     }
-}   
+}
+        
