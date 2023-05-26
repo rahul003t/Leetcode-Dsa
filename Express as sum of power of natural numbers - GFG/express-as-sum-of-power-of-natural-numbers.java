@@ -23,6 +23,8 @@ class GFG
 
 // } Driver Code Ends
 
+
+//User function Template for Java
 class Solution
 {   static long M = 1000000007l;
     public static int numOfWays(int targetSum, int pow){
