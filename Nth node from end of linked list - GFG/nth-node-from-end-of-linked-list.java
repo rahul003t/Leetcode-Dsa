@@ -94,6 +94,7 @@ class Node
     Node(int d) {data = d; next = null; }
 }
 */
+
 class Solution
 {
     int getNthFromLast(Node head, int n)
