@@ -25,7 +25,6 @@ class GFG {
 
 
 //User function Template for Java
-
 class Solution{
     ArrayList<String> CamelCase(int N,String[] Dictionary,String Pattern){
         ArrayList<String> arr=new ArrayList<>();
