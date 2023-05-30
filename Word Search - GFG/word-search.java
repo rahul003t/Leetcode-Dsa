@@ -32,6 +32,7 @@ class GFG
 }
 // } Driver Code Ends
 
+
 class Solution{
     public boolean isWordExist(char[][] board, String word){
         // Code here
