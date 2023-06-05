@@ -134,6 +134,6 @@ class Solution
         }
         
         return Math.min(element, Math.abs(root.data-K));
-    } 
+    }
 }
 
