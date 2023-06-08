@@ -3,11 +3,8 @@ import java.io.*;
 import java.util.*;
 
 // } Driver Code Ends
-
-
-
 class Solution {
-    public static String kthPermutation(int n,int k) {
+   public static String kthPermutation(int n,int k) {
         // code here
        ArrayList<Integer>deban=new ArrayList<>();
         ArrayList<Integer>app=new ArrayList<>();
