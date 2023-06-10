@@ -41,7 +41,7 @@ class GFG {
 
 class Solution {
     
-    public void Rearrange(int a[], int n)
+     public void Rearrange(int a[], int n)
     {
         Queue<Integer> neg = new LinkedList<>();
 
