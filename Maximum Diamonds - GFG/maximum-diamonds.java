@@ -30,6 +30,7 @@ class GFG {
 
 
 //User function Template for Java
+
 class Solution {
     static long maxDiamonds(int[] A, int N, int K) {
         // code here
