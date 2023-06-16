@@ -38,7 +38,6 @@ class GFG implements Runnable{
 }
 // } Driver Code Ends
 
-
 class Solution {
     static long dp[][];
     public static long minTime(int n, int[] locations, int[] types) {
@@ -95,4 +94,4 @@ class Solution {
             return dp[i][pos]=Math.min(2*(x-mn)+(mx-x)+fun(i+1,arr,1),2*(mx-x)+(x-mn)+fun(i+1,arr,0));
         }
     }
-}    
+}
