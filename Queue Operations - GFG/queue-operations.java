@@ -9,6 +9,7 @@ import java.util.*;
 //User function Template for Java
 
 // Helper class Geeks to implement 
+// insert() and findFrequency()
 class Geeks{
     
     // Function to insert element into the queue
