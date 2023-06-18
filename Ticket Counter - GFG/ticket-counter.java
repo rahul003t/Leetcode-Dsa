@@ -22,6 +22,7 @@ class GFG{
 // } Driver Code Ends
 
 
+//User function Template for Java
 class Solution {
     public static int distributeTicket(int N,int K){
         int d = N/K;
