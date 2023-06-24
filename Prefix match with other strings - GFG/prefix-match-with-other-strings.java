@@ -37,7 +37,6 @@ class GFG
 
 //User function Template for Java
 
-
 class Solution
 {
     public int klengthpref(String[] arr, int n, int k, String str)
