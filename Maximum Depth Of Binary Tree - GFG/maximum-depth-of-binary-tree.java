@@ -109,12 +109,14 @@ class Node
 class Solution {
   public static int maxDepth(Node root) {
     // code here
+    
     if(root == null)
     {
         return 0;
     }
     
-    return Math.max(maxDepth(root.right),maxDepth(root.left))+1;
+    return Math.max(maxDepth(root.left),maxDepth(root.right))+1;
+
   }
 }
      
