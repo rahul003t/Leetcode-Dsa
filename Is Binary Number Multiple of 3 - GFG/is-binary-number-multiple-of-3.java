@@ -23,6 +23,7 @@ class GfG
 
 //User function Template for Java
 
+
 class Solution {
     int isDivisible(String s) {
         // code here
