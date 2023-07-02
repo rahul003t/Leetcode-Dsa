@@ -23,6 +23,7 @@ class GFG{
 
 
 //User function Template for Java
+
 class Solution{
     static int setSetBit(int x, int y, int l, int r){
         int m1 = 1 << (r-l+1);
