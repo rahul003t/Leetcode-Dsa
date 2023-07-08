@@ -39,27 +39,24 @@ class Solution
         for(int i=0;i<n-2;i++)
         {
             int s=i+1,e=n-1;
-            while(s < e){
-                if(arr[s]+arr[e]+arr[i] ==0)
-                    {
-                        return true;
-                    }
-                    else if(arr[s]+arr[e] > Math.abs(arr[i]))
-                    {
-                        e--;
-                    }
-                    else
-                    {
-                        s++;
-                    }
-                    
+            
+            while(s <e) 
+            {
+                if(arr[s]+arr[e]+arr[i] == 0)
+                {
+                    return true;
                 }
-        } 
-         
-       
-          return false;      
+                else if(arr[s]+arr[e] > Math.abs(arr[i]))
+                {
+                    e--;
+                }
+                else
+                {
+                    s++;
+                }
+            }
+        }
         
-            
-            
+        return false;
     }
-}    
+}
