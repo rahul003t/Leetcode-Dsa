@@ -55,6 +55,7 @@ class GFG {
 // } Driver Code Ends
 
 
+
 class Solution {
     public static boolean isFrequencyUnique(int n, int[] arr) {
         // code here
@@ -72,3 +73,4 @@ class Solution {
         return true;
     }
 }
+        
