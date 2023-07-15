@@ -45,10 +45,12 @@ class Solution
     //Function to delete middle element of a stack.
     public void deleteMid(Stack<Integer>s,int sizeOfStack){
         // code here
+        
         helper(s,sizeOfStack,0);
+        
     } 
     
-    private void helper(Stack<Integer>s,int n,int idx)
+    public void helper(Stack<Integer> s,int n,int idx)
     {
         if(idx == n/2)
         {
