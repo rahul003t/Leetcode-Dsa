@@ -25,7 +25,7 @@ class GFG
 
 class Solution
 {
-     public String FirstNonRepeating(String A)
+    public String FirstNonRepeating(String A)
     {
        int n = A.length();
        Queue<Character> q = new LinkedList<>();
