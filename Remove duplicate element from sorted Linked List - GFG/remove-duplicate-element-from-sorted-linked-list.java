@@ -76,21 +76,38 @@ class GfG
     Node removeDuplicates(Node head)
     {
     // Your code here
+    // Node fast = head.next;
+    // Node slow = head;
+    
+    // while(fast != null){
+        
+        
+    //     if(slow.data != fast.data){
+    //         slow.next = fast;
+    //         slow = fast;
+    //     }
+    //     fast = fast.next;
+     
+        
+    // }
+    
+    // slow.next = fast;
+    
+    // return head;
+    
     Node fast = head.next;
     Node slow = head;
     
-    while(fast != null){
-        
-        
-        if(slow.data != fast.data){
+    while(fast != null)
+    {
+        if(slow.data != fast.data)
+        {
             slow.next = fast;
-            slow = fast;
+            slow=fast;;
+            
         }
-            fast = fast.next;
-     
-        
+        fast=fast.next;
     }
-    
     slow.next = fast;
     
     return head;
