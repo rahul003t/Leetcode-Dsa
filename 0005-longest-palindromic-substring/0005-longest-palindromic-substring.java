@@ -1,9 +1,13 @@
 class Solution {
     public String longestPalindrome(String s) {
         
-        if(s.length() ==0 || s == null)
+        if(s.length() ==0 )
         {
             return s;
+        }
+        if(s.length() == null)
+        {
+            return null;
         }
         
         int len = s.length();
